@@ -1,0 +1,188 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+
+header {
+     width: 100%;
+     height: 8vh;
+     display: flex;
+     justify-content: center;
+     background-color: #0b0b10;
+}
+
+header a {
+     text-decoration: none;
+     color: black;
+     font-family: 'Roboto Mono';
+}
+
+.front_mobile {
+     height: 92vh;
+     width: 100%;
+     background-color: #0b0b10;
+     padding-top: 5vh;
+}
+
+.logo {
+     width: 60px;
+     height: 8vh;
+     background-color: #0b0b10;
+     border: 1.1px solid white;
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     transform: translate(-50%, 0);
+
+}
+
+.logo p {
+     margin-top: auto;
+     font-size: 1.1em;
+     color: white;
+}
+
+.line {
+     width: 100%;
+     height: 1.1px;
+     background-color: white;
+     position: absolute;
+     top: 6.5vh;
+}
+
+.front_image {
+     width: 60%;
+     height: 50vh;
+     background-color: #fff;
+     margin: 0 auto 0 auto;
+     box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.79);
+     background-image: url(../Images/img1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     filter: brightness(90%) grayscale(20%)
+}
+
+.front_mobile h1 {
+     color: #b0b0b0;
+     font-family: 'Roboto Mono';
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 4vh;
+     font-size: 1.3em;
+     width: 60%;
+}
+
+.front_mobile p {
+     width: 75%;
+     color: #b0b0b0;
+     margin: 0 auto;
+     text-align: center;
+     margin-top: 2vh;
+}
+
+.front_desktop {
+     display: none;
+}
+
+@media only screen and (min-width:768px) {
+     .front_mobile {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 20% 80%;
+     }
+
+     .front_image {
+          grid-row: 1/3;
+          grid-column: 1/2;
+          margin: auto 0;
+          justify-self: center;
+          margin-bottom: 25vh;
+          width: 80%;
+          height: 60vh;
+          margin-left: 100px;
+     }
+
+     .front_mobile h1 {
+          grid-row: 1/2;
+          grid-column: 2/3;
+          align-self: center;
+          justify-self: center;
+          width: 50%;
+     }
+
+     .front_mobile p {
+          width: 60%;
+          color: #b0b0b0;
+          justify-self: center;
+          align-self: auto;
+          text-align: center;
+          margin-top: 10vh;
+     }
+}
+
+@media only screen and (min-width:1200px) {
+     .front_mobile {
+          display: none;
+     }
+
+     header {
+          display: none;
+     }
+
+     .front_desktop {
+          display: block;
+          width: 100%;
+          height: 100vh;
+          background-color: #0b0b10;
+     }
+
+     .logo {
+          width: 100px;
+          height: 10vh;
+          background-color: #0b0b10;
+          border: 1.1px solid white;
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          transform: translate(0, 0);
+          right: 10vw;
+          top: 20px;
+          border: 0;
+     }
+
+     .logo p {
+          margin-top: auto;
+          font-size: 1.5em;
+          color: white;
+          margin-bottom: 3px;
+          transform: scaleY(0.8);
+     }
+
+     .front_desktop video {
+          width: 70%;
+          top: 30px;
+          position: absolute;
+          right: 30px;
+     }
+
+     .front_desktop nav {
+          width: 250px;
+          height: 28vh;
+          position: absolute;
+          bottom: 9vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          left: 8vw;
+     }
+
+     .front_desktop nav a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5em;
+     }
+}
