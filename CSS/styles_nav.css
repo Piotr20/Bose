@@ -143,7 +143,7 @@ header a {
 
      .logo {
           width: 100px;
-          height: 10vh;
+          height: 9%;
           background-color: #0b0b10;
           border: 1.1px solid white;
           display: flex;
@@ -174,7 +174,7 @@ header a {
           width: 250px;
           height: 28vh;
           position: absolute;
-          bottom: 9vh;
+          bottom: 10%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
@@ -255,7 +255,7 @@ header a {
           background-color: rgb(250, 250, 250);
           position: absolute;
           right: 70px;
-          bottom: 16vh;
+          bottom: 16%;
           text-decoration: none;
           color: #0b0b10;
           font-family: 'Roboto Mono', monospace;
@@ -276,7 +276,7 @@ header a {
           height: 35vh;
           position: absolute;
           right: 45px;
-          bottom: 23vh;
+          bottom: 25%;
      }
 
      .video_text p {
