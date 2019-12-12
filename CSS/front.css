@@ -1,0 +1,95 @@
+.philosophy_mobile {
+     width: 100%;
+     height: 180vh;
+     background-color: #1a1a1e;
+     position: relative;
+}
+
+.top_shape {
+     position: absolute;
+     background-color: #1a1a1e;
+     width: 100%;
+     height: 5vh;
+     /* top: -5vh; */
+     border-top-left-radius: 80px;
+     border-top-right-radius: 80px;
+}
+
+.philosophy_mobile h2 {
+     text-align: center;
+     font-family: 'Roboto Mono', monospace;
+     color: #b0b0b0;
+     padding-top: 20px;
+     font-size: 1.5em;
+}
+
+.philosophy_image {
+     width: 60%;
+     height: 50vh;
+     background-color: #fff;
+     margin: 10vh auto 0 auto;
+     box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.79);
+     background-image: url(../Images/Philosophy\ img.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 35% center;
+     filter: brightness(90%) grayscale(15%) saturate(90%)
+}
+
+.philosophy_mobile p {
+     width: 70%;
+     text-align: center;
+     color: #b0b0b0;
+     margin: 10vh auto 0 auto;
+}
+
+.philosophy_mobile a:nth-of-type(1) {
+     width: 40%;
+     height: 35px;
+     background-color: #b0b0b0;
+     color: black;
+     text-align: center;
+     text-decoration: none;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     bottom: 80px;
+     line-height: 35px;
+     font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (min-width:768px) {
+     .philosophy_mobile {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 30% 70%;
+          grid-template-areas:
+               'headline img '
+               ' text img';
+          height: 100vh;
+
+     }
+
+     .philosophy_mobile h2 {
+          grid-area: headline;
+          align-self: center;
+     }
+
+     .philosophy_image {
+          grid-area: img;
+          align-self: center;
+          margin-top: 0;
+          margin-bottom: 20vh;
+     }
+
+     .philosophy_mobile p {
+          grid-area: text;
+          margin-top: 0;
+     }
+}
+
+@media only screen and (min-width:1200px) {
+     .philosophy_mobile {
+          display: none;
+     }
+}
