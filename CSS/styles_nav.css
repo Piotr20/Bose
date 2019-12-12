@@ -143,7 +143,7 @@ header a {
 
      .logo {
           width: 100px;
-          height: 8vh;
+          height: 10vh;
           background-color: #0b0b10;
           border: 1.1px solid white;
           display: flex;
@@ -172,24 +172,20 @@ header a {
 
      .front_desktop nav {
           width: 250px;
-          height: 21vh;
+          height: 28vh;
           position: absolute;
-          bottom: 12vh;
+          bottom: 9vh;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           left: 10vw;
      }
 
-     .front_desktop a:nth-of-type(2) {
-          display: block;
-     }
-
      .front_desktop nav a {
           text-decoration: none;
           color: white;
-          font-size: 1.5em;
-          height: 35px;
+          font-size: 1.4em;
+          height: 30px;
           padding-left: 30px;
           position: relative;
           overflow-x: hidden;
@@ -202,18 +198,13 @@ header a {
           height: 1px;
           background-color: #fff;
           position: absolute;
-          bottom: 1px;
+          bottom: 0;
           left: -70%;
           transition: .6s ease;
      }
 
      .front_desktop nav a:hover::after {
           left: 0;
-     }
-
-     .front_desktop>a:nth-of-type(2) {
-          width: 0px;
-          height: 0px;
      }
 
      .circle {
@@ -237,7 +228,7 @@ header a {
      }
 
      .circle .arrow::before {
-          content: '';
+          content: ' ';
           width: 20px;
           height: 1px;
           background-color: #fff;
@@ -291,8 +282,8 @@ header a {
      .video_text p {
           font-family: 'Roboto Mono';
           font-weight: 500;
-          line-height: 17px;
-          font-size: 17px;
+          line-height: 14px;
+          font-size: 16px;
           color: rgb(224, 224, 224);
 
      }
