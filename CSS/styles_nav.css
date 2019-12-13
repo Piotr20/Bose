@@ -307,4 +307,199 @@ header a {
           border: 1px solid rgb(233, 233, 233);
           line-height: 80px;
      }
+
+     .video_text {
+          max-width: 40%;
+          max-height: 50%;
+          position: absolute;
+          right: 3%;
+          bottom: 5%;
+          font-family: 'Roboto Mono', monospace;
+          display: flex;
+          flex-direction: column;
+     }
+}
+
+@media only screen and (min-width:1800px) {
+     .front_mobile {
+          display: none;
+     }
+
+     header {
+          display: none;
+     }
+
+     .front_desktop {
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          background-color: #0b0b10;
+     }
+
+     .front_desktop .nav_container {
+          width: 27%;
+          height: 100vh;
+
+
+     }
+
+     .front_desktop .content_container {
+          height: 100vh;
+          width: 73%;
+          display: block;
+          position: relative;
+     }
+
+
+     .content_container video {
+          width: 98%;
+          margin-top: 2%;
+
+     }
+
+     .nav_container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     .nav_container ul {
+          width: 60%;
+          min-height: 400px;
+          margin-bottom: 10vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          list-style: none;
+     }
+
+     .nav_container ul li {
+          text-decoration: none;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 1.8em;
+          color: white;
+          padding-left: 20px;
+          position: relative;
+          overflow-x: hidden;
+     }
+
+     .nav_container ul li::after {
+          width: 50%;
+          height: 1px;
+          content: '';
+          position: absolute;
+          bottom: 0;
+          background-color: #fff;
+          left: -70%;
+          transition: .7s ease;
+     }
+
+     .nav_container ul li:hover::after {
+          left: 0;
+
+     }
+
+     .nav_container ul li a {
+          text-decoration: none;
+          color: #fff;
+     }
+
+     .nav_container>a {
+          width: 80px;
+          height: 80px;
+          margin: 7% auto 0 25%;
+     }
+
+     .nav_container .circle {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 1px solid white;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .circle .arrow {
+          width: 2px;
+          height: 40px;
+          background-color: #fff;
+          position: relative;
+
+     }
+
+     .arrow::before {
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 1px;
+          transform: rotate(135deg) translateY(250%);
+     }
+
+     .arrow::after {
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          bottom: 0;
+          right: 1px;
+          transform: rotate(45deg) translateY(-250%);
+     }
+
+     .philisophy_desktop {
+          width: 100%;
+          height: 100vh;
+          background-color: rgb(49, 7, 16);
+     }
+
+     .content_container>a.logo_link {
+          position: absolute;
+          right: 14%;
+     }
+
+     .logo {
+          border: 0;
+          width: 100px;
+          height: 120px;
+     }
+
+     .logo p {
+          font-size: 1.4em;
+          margin-bottom: 3px;
+          transform: scaleY(0.8);
+     }
+
+     .video_text {
+          max-width: 20%;
+          max-height: 40%;
+          position: absolute;
+          right: 3%;
+          bottom: 15%;
+          font-family: 'Roboto Mono', monospace;
+          display: flex;
+          flex-direction: column;
+     }
+
+     .video_text p {
+          padding-top: 6%;
+          color: rgb(233, 233, 233);
+     }
+
+     .video_text a {
+          width: 70%;
+          height: 80px;
+          align-self: center;
+          text-align: center;
+          margin-top: 15%;
+          text-decoration: none;
+          color: rgb(233, 233, 233);
+          border: 1px solid rgb(233, 233, 233);
+          line-height: 80px;
+     }
 }
