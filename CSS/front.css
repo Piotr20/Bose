@@ -21,6 +21,7 @@
      color: #b0b0b0;
      padding-top: 20px;
      font-size: 1.5em;
+     font-weight: 500;
 }
 
 .philosophy_image {
@@ -64,7 +65,7 @@
 
 .headphones_mobile {
      width: 100%;
-     height: 180vh;
+     height: 190vh;
      background-color: rgb(134, 134, 134);
      position: relative;
      font-family: 'Roboto Mono', monospace;
@@ -78,6 +79,7 @@
      text-align: center;
      font-size: 1.5em;
      height: 10vh;
+     font-weight: 500;
 }
 
 .images_container {
@@ -137,13 +139,134 @@
      position: absolute;
      left: 50%;
      transform: translate(-50%, -50%);
-     bottom: 10px;
+     bottom: 12vh;
      line-height: 35px;
      font-family: 'Roboto Mono', monospace;
 }
 
 .headphones_desktop {
      display: none;
+}
+
+.quality_mobile {
+     width: 100%;
+     height: 190vh;
+     background-color: rgb(194, 194, 194);
+     position: relative;
+     font-family: 'Roboto Mono', monospace;
+     display: grid;
+     grid-template-rows: 10vh 90vh 90vh;
+}
+
+.quality_mobile .top_shape {
+     background-color: rgb(194, 194, 194);
+}
+
+.quality_mobile h2 {
+     text-align: center;
+     font-family: 'Roboto Mono', monospace;
+     color: #252525;
+     font-size: 1.5em;
+     height: 10vh;
+     font-weight: 500;
+}
+
+.quality_mobile .first_section {
+     width: 100%;
+     height: 90vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.quality_mobile .secomd_section {
+     width: 100%;
+     height: 90vh;
+}
+
+
+.first_section .under_text {
+     width: 100%;
+     height: 60%;
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+}
+
+.under_text .img {
+     width: 60%;
+     height: 100%;
+     background-color: rgb(0, 0, 0);
+     margin-right: 10%;
+     background-image: url(../Images/b4.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     z-index: 2;
+}
+
+.under_text p {
+     position: absolute;
+     z-index: 1;
+     font-size: 3em;
+     font-family: 'Roboto Mono', monospace;
+     width: 190%;
+     height: 20%;
+     top: -10%;
+     font-weight: 500;
+     line-height: 100%;
+     left: -70%;
+     opacity: .5;
+}
+
+
+
+.under_text p:nth-child(2) {
+     top: 10%;
+     left: -60%;
+}
+
+.under_text p:nth-child(3) {
+     top: 30%;
+     left: -50%;
+}
+
+.under_text p:nth-child(4) {
+     top: 50%;
+     left: -40%;
+}
+
+.under_text p:nth-child(5) {
+     top: 70%;
+     left: -30%;
+}
+
+.under_text p:nth-child(6) {
+     top: 90%;
+     left: -20%;
+}
+
+.quality_mobile .secomd_section p {
+     width: 70%;
+     text-align: center;
+     color: #252525;
+     margin: 0 auto;
+     font-weight: 500;
+}
+
+.secomd_section a {
+     width: 40%;
+     height: 35px;
+     background-color: #b0b0b0;
+     color: black;
+     text-align: center;
+     text-decoration: none;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     bottom: 12vh;
+     line-height: 35px;
+     font-family: 'Roboto Mono', monospace;
 }
 
 @media only screen and (min-width:768px) {
@@ -188,7 +311,23 @@
      }
 
      .text_container a {
-          bottom: 50px;
+          bottom: 100px;
+     }
+
+     .under_text .img {
+          margin: 0;
+     }
+
+     .under_text p {
+          display: none;
+     }
+
+     .quality_mobile {
+          height: 150vh;
+     }
+
+     .quality_mobile .secomd_section {
+          height: 50vh;
      }
 
 }
@@ -222,8 +361,11 @@
           background-repeat: no-repeat;
           background-position: 45% center;
           background-size: cover;
-          filter: brightness(100%) grayscale(35%) saturate(100%);
+          filter: grayscale(35%) saturate(100%);
+
      }
+
+
 
      .philisophy_desktop h2 {
           grid-area: headline;
@@ -294,7 +436,9 @@
           height: 50%;
           background-color: rgb(0, 0, 0);
           justify-self: center;
+
      }
+
 
      .headphones_desktop section div.img2 {
           align-self: center;
@@ -360,6 +504,10 @@
 
      }
 
+     .quality_mobile {
+          display: none;
+     }
+
      @media only screen and (min-width:1600px) {
           .philisophy_desktop p {
                width: 50%;
@@ -384,3 +532,4 @@
                bottom: 7%;
           }
      }
+}
