@@ -191,6 +191,7 @@
      display: flex;
      justify-content: flex-end;
      position: relative;
+     overflow-x: hidden;
 }
 
 .under_text .img {
@@ -269,6 +270,10 @@
      font-family: 'Roboto Mono', monospace;
 }
 
+.quality_desktop {
+     display: none;
+}
+
 @media only screen and (min-width:768px) {
      .philosophy_mobile {
           display: grid;
@@ -291,6 +296,7 @@
           align-self: center;
           margin-top: 0;
           margin-bottom: 20vh;
+          width: 75%;
      }
 
      .philosophy_mobile p {
@@ -322,8 +328,24 @@
           display: none;
      }
 
+     .quality_mobile h2 {
+          font-size: 2em;
+     }
+
      .quality_mobile {
           height: 150vh;
+     }
+
+     .quality_mobile .under_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+     }
+
+     .under_text .img {
+          box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.79);
+          height: 90%;
      }
 
      .quality_mobile .secomd_section {
@@ -508,6 +530,117 @@
           display: none;
      }
 
+     .quality_desktop {
+          width: 100%;
+          height: 100vh;
+          background-color: rgb(255, 255, 255);
+          font-family: 'Roboto Mono', monospace;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas:
+               'text img';
+          position: relative;
+          overflow-x: hidden;
+     }
+
+     .quality_desktop article {
+          grid-area: text;
+          width: 80%;
+          height: 30%;
+          justify-self: center;
+          align-self: center;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          z-index: 2;
+     }
+
+     .quality_desktop article h2 {
+          font-size: 2.5em;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+     }
+
+     .quality_desktop article p {
+          width: 70%;
+          font-size: 1.3em;
+          font-weight: 500;
+          margin: 0 auto;
+     }
+
+     .quality_desktop div.img {
+          grid-area: img;
+          background-image: url(../Images/b4.jpg);
+          width: 52%;
+          height: 75%;
+          justify-self: center;
+          align-self: center;
+          background-repeat: no-repeat;
+          background-position: 45% center;
+          background-size: cover;
+          filter: grayscale(35%) saturate(100%);
+          z-index: 2;
+     }
+
+     .quality_desktop span {
+          font-size: 13em;
+          position: absolute;
+          font-weight: 700;
+          bottom: 18vh;
+          opacity: .1;
+          transform: scaleY(1.4);
+          width: 200%;
+          color: #0b0b10;
+          animation: textswipe 15s alternate infinite linear;
+     }
+
+     .quality_desktop span:nth-of-type(2) {
+          font-size: 13em;
+          position: absolute;
+          font-weight: 700;
+          top: 18vh;
+          opacity: .1;
+          transform: scaleY(1.4);
+          width: 200%;
+          color: #0b0b10;
+          animation: textswipe 15s alternate-reverse infinite linear;
+          display: none;
+     }
+
+     @keyframes textswipe {
+          0% {
+               left: -29%;
+          }
+
+          100% {
+               left: 0%;
+          }
+     }
+
+     .quality_desktop a {
+          position: absolute;
+          background-color: #0b0b10;
+          width: 200px;
+          height: 55px;
+          text-align: center;
+          text-decoration: none;
+          color: rgb(233, 233, 233);
+          border: 1px solid rgb(233, 233, 233);
+          line-height: 60px;
+          font-size: 1.3em;
+          transition: .4s ease;
+          left: 52%;
+          bottom: 50%;
+          transform: translate(-50%, -50%);
+     }
+
+     .quality_desktop a:hover {
+          color: black;
+          background-color: #fff;
+
+     }
+
      @media only screen and (min-width:1600px) {
           .philisophy_desktop p {
                width: 50%;
@@ -531,5 +664,16 @@
                left: 10%;
                bottom: 7%;
           }
+
+          .quality_desktop span:nth-of-type(2) {
+               display: block;
+          }
+     }
+
+     .quality_desktop a {
+          width: 250px;
+          height: 65px;
+          bottom: 65%;
+          left: 55%;
      }
 }
