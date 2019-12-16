@@ -33,6 +33,7 @@ article {
      width: 100%;
      border-top: 4px double #000;
      font-family: 'Roboto Mono', monospace;
+     overflow: hidden;
 }
 
 article h3 {
