@@ -30,7 +30,7 @@
      background-color: #fff;
      margin: 10vh auto 0 auto;
      box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.79);
-     background-image: url(../Images/Philosophy\ img.jpg);
+     background-image: url(../Images/Philosophy_img.jpg);
      background-size: cover;
      background-repeat: no-repeat;
      background-position: 35% center;
@@ -156,6 +156,7 @@
      font-family: 'Roboto Mono', monospace;
      display: grid;
      grid-template-rows: 10vh 90vh 90vh;
+
 }
 
 .quality_mobile .top_shape {
@@ -274,55 +275,9 @@
      display: none;
 }
 
-footer {
-     width: 100%;
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     background-color: #0b0b10;
-     font-family: 'Roboto Mono', monospace;
-}
-
-footer a {
-     width: 100%;
-     height: 24%;
-     background-color: #fff;
-     text-align: center;
-     line-height: 24vh;
-     color: white;
-     text-decoration: none;
-     font-size: 1.8em;
-}
-
-footer a i {
-     font-size: 1.8em;
-}
 
 
-footer a:nth-child(1) {
-     background-color: #1a1a1e;
-}
 
-footer a:nth-child(2) {
-     background-color: rgb(134, 134, 134);
-}
-
-footer a:nth-child(2) i {
-     color: rgb(73, 19, 122);
-}
-
-footer a:nth-child(3) {
-     background-color: rgb(194, 194, 194);
-}
-
-footer a:nth-child(3) i {
-     color: rgb(35, 47, 155);
-}
-
-footer a:nth-child(4) {
-     color: black;
-}
 
 @media only screen and (min-width:768px) {
      .philosophy_mobile {
@@ -391,6 +346,7 @@ footer a:nth-child(4) {
           justify-content: center;
           align-items: center;
           height: 80%;
+          overflow: hidden;
      }
 
      .under_text .img {
@@ -424,7 +380,7 @@ footer a:nth-child(4) {
      }
 
      .philisophy_desktop div.image {
-          background-image: url(../Images/Philosophy\ img.jpg);
+          background-image: url(../Images/Philosophy_img.jpg);
           grid-area: img;
           width: 52%;
           height: 75%;
@@ -691,34 +647,7 @@ footer a:nth-child(4) {
 
      }
 
-     footer {
-          height: 40vh;
-          flex-direction: row;
-          align-items: center;
-     }
 
-     footer a {
-          width: 24%;
-          height: 95%;
-          line-height: 40vh;
-          position: relative;
-     }
-
-     footer a::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 5px;
-          background-color: #000;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          bottom: 20%;
-          transition: .9s ease;
-     }
-
-     footer a:hover::after {
-          width: 70%;
-     }
 }
 
 @media only screen and (min-width:1600px) {
@@ -757,11 +686,5 @@ footer a:nth-child(4) {
 
      }
 
-     footer a {
-          font-size: 1.9em;
-     }
 
-     footer a i {
-          font-size: 1.9em;
-     }
 }

@@ -6,6 +6,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <meta name="robots" content="noindex" />
+     <meta name="description" content="A main page for Bose brand containing informations about product aimed for clients from age 20-30
+          rich in helpful articles and information about brand itself" />
      <title>Bose</title>
      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-     <header>
+     <header id="home">
           <div class="line"></div>
           <a href="index.html">
                <div class="logo">
@@ -34,21 +36,27 @@
      </div>
      <div class="front_desktop">
           <div class="nav_container">
-               <a href="">
+               <a href="#footer">
                     <div class="circle">
                          <div class="arrow"></div>
                     </div>
                </a>
                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="Subpages/products.html">Products</a></li>
                     <li><a href="">About us</a></li>
                     <li><a href="">Contact us</a></li>
                </ul>
+               <style>
+                    .front_desktop .nav_container ul li:nth-child(1)::after {
+                         left: -25%;
+                    }
+               </style>
 
           </div>
           <div class="content_container">
-               <video src="Videos/front video.mp4" autoplay loop muted></video>
+               <video src="Videos/front_video.mp4" autoplay loop muted></video>
                <a class="logo_link" href="index.html">
                     <div class="logo">
                          <p>Bose</p>
@@ -63,7 +71,7 @@
                     <p>We seek to develop an environment that challenges us to pursue excellence and to reach our
                          fullest
                          human potential.</p>
-                    <a href="">Explore</a>
+                    <a href="Subpages/products.html">Explore</a>
                </div>
           </div>
      </div>
@@ -82,7 +90,7 @@
                     But it’s more than just research. We aim for excellence in everything we do. From the way we run our
                     business to our customer service. From the products to the owner’s manuals you’ll use to set them
                     up. In everything we do, we truly believe that “good enough” is merely a starting point.</p><a
-                    href="">Explore</a>
+                    href="Subpages/philosophy.html">Explore</a>
           </div>
           <div class="philisophy_desktop">
                <h2>What we belive in</h2>
@@ -99,7 +107,7 @@
                     up. In everything we do, we truly believe that “good enough” is merely a starting point.
                </p>
                <div class="image"></div>
-               <a href="">Explore</a>
+               <a href="Subpages/philosophy.html">Explore</a>
           </div>
           <div class="headphones_mobile">
                <div class="top_shape"></div>
@@ -119,7 +127,7 @@
                          microphone system for voice pickup. And then there’s Bose AR*, a first-of-its-kind audio
                          augmented reality platform that makes astonishing new audio experiences possible. Now available
                          in limited-edition Soapstone.</p>
-                    <a href="">Explore</a>
+                    <a href="Subpages/products.html">Explore</a>
                </div>
           </div>
           <div class="headphones_desktop">
@@ -137,7 +145,7 @@
                          augmented reality platform that makes astonishing new audio experiences possible. <br> Now
                          available
                          in limited-edition Soapstone.</p>
-                    <a href="">Explore</a>
+                    <a href="Subpages/products.html">Explore</a>
                </article>
                <section class="gallery">
                     <div class="img1"></div>
@@ -165,7 +173,7 @@
                          Excellence is our way of life. It has always been integral to our business. We expect our
                          products, people, practices and leadership to exemplify it. Our attitude is to always challenge
                          ourselves and each other to be better.</p>
-                    <a href="">Explore</a>
+                    <a href="Subpages/quality.html">Explore</a>
                </div>
           </div>
           <div class="quality_desktop">
@@ -179,15 +187,20 @@
                          ourselves and each other to be better.</p>
                </article>
                <div class="img"></div>
-               <a href="">Explore</a>
+               <a href="Subpages/quality.html">Explore</a>
           </div>
      </main>
-     <footer>
-          <a href="">Home</a>
+     <footer id="footer">
+          <a href="index.html">Home</a>
           <a href="https://www.instagram.com/bose/"><i class="fab fa-instagram"></i></a>
           <a href="https://www.facebook.com/Bose/"><i class="fab fa-facebook-f"></i></a>
-          <a href="">Shop</a>
+          <a href="Subpages/products.html">Shop</a>
      </footer>
+     <a href="#home">
+          <div class="circle">
+               <div class="arrow"></div>
+          </div>
+     </a>
 </body>
 
 </html>
