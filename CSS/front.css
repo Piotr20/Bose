@@ -275,8 +275,47 @@
      display: none;
 }
 
+main {
+     overflow: hidden;
+}
 
+.faces {
+     width: 100%;
+     font-family: 'Roboto Mono', monospace;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
 
+.faces h2 {
+     width: 90%;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 20px;
+}
+
+.faces a {
+     width: 150px;
+     height: 50px;
+     background-color: rgb(0, 0, 0);
+     color: #ffff;
+     text-align: center;
+     text-decoration: none;
+     line-height: 50px;
+     margin-bottom: 20px;
+
+}
+
+.faces span {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     width: inherit;
+}
+
+.faces span img {
+     width: 100%;
+}
 
 
 @media only screen and (min-width:768px) {
@@ -365,6 +404,334 @@
           display: none;
      }
 
+     .philisophy_desktop {
+          width: 100%;
+          height: 100vh;
+          background-color: rgb(255, 255, 255);
+          font-family: 'Roboto Mono', monospace;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 30% 70%;
+          grid-template-areas:
+               'headline img'
+               'text img';
+          position: relative;
+     }
+
+     .philisophy_desktop div.image {
+          background-image: url(../Images/Philosophy_img.jpg);
+          grid-area: img;
+          width: 52%;
+          height: 75%;
+          justify-self: center;
+          align-self: center;
+          background-repeat: no-repeat;
+          background-position: 45% center;
+          background-size: cover;
+          filter: grayscale(35%) saturate(100%);
+
+     }
+
+
+
+     .philisophy_desktop h2 {
+          grid-area: headline;
+          justify-self: center;
+          align-self: flex-end;
+          font-size: 1.8em;
+          margin-left: 12%;
+          margin-bottom: 6%;
+     }
+
+     .philisophy_desktop p {
+          grid-area: text;
+          justify-self: center;
+          align-self: center;
+          width: 80%;
+          font-size: 1em;
+          font-weight: 500;
+          margin-bottom: 10%;
+          margin-left: 20%;
+     }
+
+     .philisophy_desktop a {
+          position: absolute;
+          background-color: #0b0b10;
+          width: 170px;
+          height: 45px;
+          text-align: center;
+          text-decoration: none;
+          color: rgb(233, 233, 233);
+          border: 1px solid rgb(233, 233, 233);
+          line-height: 45px;
+          font-size: 1em;
+          transition: .4s ease;
+          left: 48%;
+          top: 15%;
+     }
+
+     .philisophy_desktop a:hover {
+          color: black;
+          background-color: #fff;
+     }
+
+     .headphones_mobile {
+          display: none;
+     }
+
+     .headphones_desktop {
+          display: flex;
+          height: 100vh;
+          width: 100%;
+          font-family: 'Roboto Mono', monospace;
+     }
+
+     .headphones_desktop article {
+          height: 100vh;
+          width: 30%;
+          position: relative;
+     }
+
+     .headphones_desktop section {
+          height: 100vh;
+          width: 70%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     .headphones_desktop section div {
+          width: 75%;
+          height: 50%;
+          background-color: rgb(0, 0, 0);
+          justify-self: center;
+
+     }
+
+
+     .headphones_desktop section div.img2 {
+          align-self: center;
+          background-image: url(../Images/b2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 80% center;
+
+     }
+
+     .headphones_desktop section div.img3 {
+          align-self: flex-end;
+          margin-bottom: 7%;
+          background-image: url(../Images/b3.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 0 center;
+     }
+
+     .headphones_desktop section div.img1 {
+          margin-top: 7%;
+          background-image: url(../Images/b1.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 70% center;
+     }
+
+     .headphones_desktop article h2 {
+          font-size: 2em;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 45%;
+     }
+
+     .headphones_desktop article p {
+          width: 92%;
+          font-size: 1em;
+          font-weight: 500;
+          margin: 0 auto;
+          margin-top: 14%;
+     }
+
+     .headphones_desktop article a {
+          position: absolute;
+          background-color: #0b0b10;
+          width: 170px;
+          height: 45px;
+          text-align: center;
+          text-decoration: none;
+          color: rgb(233, 233, 233);
+          border: 1px solid rgb(233, 233, 233);
+          line-height: 45px;
+          font-size: 1em;
+          transition: .4s ease;
+          left: 120%;
+          bottom: 1%;
+     }
+
+     .headphones_desktop article a:hover {
+          color: black;
+          background-color: #fff;
+
+     }
+
+     .quality_mobile {
+          display: none;
+     }
+
+     .quality_desktop {
+          width: 100%;
+          height: 100vh;
+          background-color: rgb(255, 255, 255);
+          font-family: 'Roboto Mono', monospace;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas:
+               'text img';
+          position: relative;
+
+     }
+
+     .quality_desktop article {
+          grid-area: text;
+          width: 80%;
+          height: 40%;
+          justify-self: center;
+          align-self: center;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          z-index: 2;
+     }
+
+     .quality_desktop article h2 {
+          font-size: 2em;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+     }
+
+     .quality_desktop article p {
+          width: 70%;
+          font-size: 1em;
+          font-weight: 500;
+          margin: 0 auto;
+     }
+
+     .quality_desktop div.img {
+          grid-area: img;
+          background-image: url(../Images/b4.jpg);
+          width: 52%;
+          height: 75%;
+          justify-self: center;
+          align-self: center;
+          background-repeat: no-repeat;
+          background-position: 45% center;
+          background-size: cover;
+          filter: grayscale(35%) saturate(100%);
+          z-index: 2;
+     }
+
+     .quality_desktop span {
+          font-size: 12em;
+          position: absolute;
+          font-weight: 700;
+          bottom: 10vh;
+          opacity: .05;
+          transform: scaleY(1.2);
+          width: 250%;
+          color: #0b0b10;
+          animation: textswipe 15s alternate infinite linear;
+
+     }
+
+     .quality_desktop span:nth-of-type(2) {
+          font-size: 12em;
+          position: absolute;
+          font-weight: 700;
+          top: 10vh;
+          opacity: .1;
+          transform: scaleY(1.4);
+          width: 250%;
+          color: #0b0b10;
+          animation: textswipe 15s alternate-reverse infinite linear;
+     }
+
+     @keyframes textswipe {
+          0% {
+               left: -29%;
+          }
+
+          100% {
+               left: 0%;
+          }
+     }
+
+     .quality_desktop a {
+          position: absolute;
+          background-color: #0b0b10;
+          width: 170px;
+          height: 45px;
+          text-align: center;
+          text-decoration: none;
+          color: rgb(233, 233, 233);
+          border: 1px solid rgb(233, 233, 233);
+          line-height: 45px;
+          font-size: 1em;
+          transition: .4s ease;
+          left: 52%;
+          bottom: 50%;
+          transform: translate(-50%, -50%);
+     }
+
+     .quality_desktop a:hover {
+          color: black;
+          background-color: #fff;
+
+     }
+
+     .faces {
+          width: 100%;
+          font-family: 'Roboto Mono', monospace;
+          display: flex;
+          align-items: center;
+          height: 100vh;
+          background-color: rgb(0, 0, 0);
+          flex-direction: column;
+     }
+
+     .faces h2 {
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 20px;
+          color: rgb(255, 255, 255);
+     }
+
+     .faces a {
+          width: 150px;
+          height: 50px;
+          background-color: rgb(0, 0, 0);
+          color: #ffff;
+          text-align: center;
+          text-decoration: none;
+          line-height: 50px;
+          margin-bottom: 20px;
+
+     }
+
+     .faces span {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100%;
+     }
+
+     .faces span img {
+          width: 30%;
+     }
+
+}
+
+@media only screen and (min-width:1600px) {
      .philisophy_desktop {
           width: 100%;
           height: 100vh;
@@ -647,10 +1014,6 @@
 
      }
 
-
-}
-
-@media only screen and (min-width:1600px) {
      .philisophy_desktop p {
           width: 50%;
      }

@@ -36,6 +36,11 @@ article {
      overflow: hidden;
 }
 
+article p {
+     font-family: 'Kanit', sans-serif;
+     font-weight: 500;
+}
+
 article h3 {
      font-size: 1.2em;
      text-align: center;
@@ -84,6 +89,7 @@ article p:nth-last-of-type(1) {
      article {
           width: 60%;
           margin: 0 auto;
+          overflow: visible;
      }
 
      article h3 {
