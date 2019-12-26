@@ -285,6 +285,7 @@ main {
      display: flex;
      align-items: center;
      flex-direction: column;
+     background-color: rgb(0, 0, 0);
 }
 
 .faces h2 {
@@ -292,6 +293,7 @@ main {
      text-align: center;
      margin: 0 auto;
      margin-top: 20px;
+     color: white;
 }
 
 .faces a {
@@ -695,6 +697,7 @@ main {
           height: 100vh;
           background-color: rgb(0, 0, 0);
           flex-direction: column;
+          justify-content: space-between;
      }
 
      .faces h2 {
@@ -706,7 +709,7 @@ main {
      }
 
      .faces a {
-          width: 150px;
+          width: 200px;
           height: 50px;
           background-color: rgb(0, 0, 0);
           color: #ffff;
@@ -714,7 +717,12 @@ main {
           text-decoration: none;
           line-height: 50px;
           margin-bottom: 20px;
+          transition: .4s ease;
+     }
 
+     .faces a:hover {
+          background-color: #fff;
+          color: #000;
      }
 
      .faces span {
@@ -726,9 +734,21 @@ main {
      }
 
      .faces span img {
-          width: 30%;
+          width: 28%;
+          transform-origin: center;
+          transform: perspective(800px) rotateY(20deg);
+          transition: .7s;
+          -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
      }
 
+     .faces span:hover img {
+          opacity: 0.3;
+     }
+
+     .faces span img:hover {
+          transform: perspective(800px) rotateY(0deg);
+          opacity: 1;
+     }
 }
 
 @media only screen and (min-width:1600px) {
