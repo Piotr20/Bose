@@ -509,7 +509,6 @@ main {
           height: 50%;
           background-color: rgb(0, 0, 0);
           justify-self: center;
-
      }
 
 
@@ -548,7 +547,7 @@ main {
      }
 
      .headphones_desktop article p {
-          width: 92%;
+          width: 80%;
           font-size: 1em;
           font-weight: 500;
           margin: 0 auto;
