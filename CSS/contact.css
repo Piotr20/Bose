@@ -1,0 +1,151 @@
+header {
+     display: flex;
+}
+
+main {
+     max-width: 1600px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: "Roboto Mono", monospace;
+     background-color: #000;
+}
+
+main>img {
+     width: 100%;
+     object-fit: scale-down;
+}
+
+h1 {
+     font-family: "Roboto Mono", monospace;
+     text-align: center;
+     font-size: 1.5em;
+     margin-top: 50px;
+     color: white;
+}
+
+main div.container {
+     width: 80%;
+     padding: 20px;
+}
+
+.container .row100 {
+     position: relative;
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+.container .row100 .col {
+     position: relative;
+     width: 100%;
+     padding: 0 10px;
+     margin: 30px 0 10px;
+     transition: .5s;
+}
+
+.container .row100 .inputBox {
+     position: relative;
+     width: 100%;
+     height: 40px;
+     color: #45f3ff;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     box-shadow: none;
+     outline: none;
+     font-size: 18px;
+     padding: 0 10px;
+     z-index: 1;
+     border: none;
+     color: white;
+}
+
+.container .row100 .inputBox .text {
+     position: absolute;
+     top: 0;
+     left: 0;
+     line-height: 40px;
+     font-size: 18px;
+     padding: 0 10px;
+     display: block;
+     transition: .5s;
+     pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus+.text,
+.container .row100 .inputBox input:valid+.text {
+     top: -35px;
+     left: -10px;
+}
+
+.container .row100 .inputBox .line {
+     position: absolute;
+     display: block;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background-color: #45f3ff;
+     border-radius: 2px;
+     pointer-events: none;
+     transition: .5s;
+}
+
+.container .row100 .inputBox input:focus~.line,
+.container .row100 .inputBox input:valid~.line {
+     height: 15%;
+}
+
+.container .row100 .inputBox.textarea {
+     width: 100%;
+     height: 100px;
+     padding: 10px 0;
+}
+
+container .row100 .inputBox.textarea textarea {
+     height: 100%;
+     resize: none;
+}
+
+.container .row100 .inputBox textarea:focus+.text,
+.container .row100 .inputBox textarea:valid+.text {
+     top: -35px;
+     left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus~.line,
+.container .row100 .inputBox textarea:valid~.line {
+     height: 6%;
+}
+
+input[type='submit'] {
+     border: none;
+     padding: 7px 35px;
+     cursor: pointer;
+     outline: none;
+     background-color: #45f3ff;
+     color: black;
+     font-size: 18px;
+     border-radius: 2px;
+}
+
+@media only screen and (min-width:768px) {
+     h1 {
+          font-size: 2.7em;
+          margin-top: 50px;
+     }
+}
+
+@media only screen and (min-width:1200px) {
+     h1 {
+          font-size: 2em;
+          margin-top: 0;
+     }
+}
+}

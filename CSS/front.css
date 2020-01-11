@@ -445,18 +445,17 @@ main {
           align-self: flex-end;
           font-size: 1.8em;
           margin-left: 12%;
-          margin-bottom: 6%;
      }
 
      .philisophy_desktop p {
           grid-area: text;
           justify-self: center;
           align-self: center;
-          width: 80%;
+          width: 70%;
           font-size: 1em;
-          font-weight: 500;
           margin-bottom: 10%;
           margin-left: 20%;
+          font-family: 'Kanit', sans-serif;
      }
 
      .philisophy_desktop a {
@@ -552,6 +551,7 @@ main {
           font-weight: 500;
           margin: 0 auto;
           margin-top: 14%;
+          font-family: 'Kanit', sans-serif;
      }
 
      .headphones_desktop article a {
@@ -618,6 +618,7 @@ main {
           font-size: 1em;
           font-weight: 500;
           margin: 0 auto;
+          font-family: 'Kanit', sans-serif;
      }
 
      .quality_desktop div.img {
